@@ -115,3 +115,9 @@ Document the dataset source, label definitions, and any class imbalance. Sentime
 Measure retrieval relevance and answer faithfulness on a fixed document-question set. Verify generated answers against the original document passages.
 
 For reproducibility, record source versions, environment and dependency versions, configuration, and actual test outputs. Clearly label sample data and illustrative results; never commit secrets or private data.
+
+### Technical Deep Dive
+
+For text classification, keep text cleaning and feature extraction inside a reproducible pipeline. A TF-IDF baseline with Logistic Regression or a linear SVM is a useful reference point; compare it with other models using the same stratified split. Review class balance and inspect misclassified examples involving negation, sarcasm, mixed opinions, spelling variation, and short texts.
+
+Suggested engineering checks: fit vocabulary only on training data, report per-class precision/recall and macro-F1 where classes are imbalanced, and document the dataset's label definitions and source.
