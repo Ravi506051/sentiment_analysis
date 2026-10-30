@@ -109,3 +109,9 @@ Use a held-out test set and report precision, recall, F1-score, and a confusion 
 ## Dataset and Interpretation
 
 Document the dataset source, label definitions, and any class imbalance. Sentiment predictions are estimates of patterns in text and may not reflect the author's intent or the full context of a message.
+
+## Project Development Notes
+
+Measure retrieval relevance and answer faithfulness on a fixed document-question set. Verify generated answers against the original document passages.
+
+For reproducibility, record source versions, environment and dependency versions, configuration, and actual test outputs. Clearly label sample data and illustrative results; never commit secrets or private data.
