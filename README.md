@@ -101,3 +101,11 @@ GitHub: [Ravi506051](https://github.com/Ravi506051)
 ## 📄 License
 
 This project is intended for educational and learning purposes. Add a suitable open-source license if you wish to distribute it under specific terms.
+
+## Evaluation Checklist
+
+Use a held-out test set and report precision, recall, F1-score, and a confusion matrix alongside accuracy. Inspect examples that are misclassified, including negation, sarcasm, mixed sentiment, spelling variation, and short messages. Keep the same split when comparing preprocessing or model changes.
+
+## Dataset and Interpretation
+
+Document the dataset source, label definitions, and any class imbalance. Sentiment predictions are estimates of patterns in text and may not reflect the author's intent or the full context of a message.
