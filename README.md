@@ -129,3 +129,11 @@ Suggested engineering checks: fit vocabulary only on training data, report per-c
 - Inspect errors involving negation, sarcasm, mixed sentiment, spelling variation, and short messages.
 - Keep preprocessing fitted on training data only and save the vectorizer with the model when deploying.
 - Sentiment predictions are estimates from text patterns and may not reflect the author's intent or full context.
+
+## NLP Experiment and Evaluation Notes
+
+- Define the sentiment label scheme and document any class imbalance in the dataset.
+- Keep text normalization consistent between training, validation, and inference.
+- Compare a simple baseline with stronger models using a stratified split or suitable cross-validation.
+- Report per-class precision, recall, F1-score, and a confusion matrix; inspect errors involving sarcasm, negation, and mixed sentiment.
+- Avoid presenting dataset-level sentiment predictions as a definitive measure of an individual's feelings.
