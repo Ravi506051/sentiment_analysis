@@ -137,3 +137,10 @@ Suggested engineering checks: fit vocabulary only on training data, report per-c
 - Compare a simple baseline with stronger models using a stratified split or suitable cross-validation.
 - Report per-class precision, recall, F1-score, and a confusion matrix; inspect errors involving sarcasm, negation, and mixed sentiment.
 - Avoid presenting dataset-level sentiment predictions as a definitive measure of an individual's feelings.
+
+## Evaluation and Error Analysis
+
+- Keep preprocessing and vectorization inside a fitted pipeline so training and inference use identical transformations.
+- Use a stratified split and report precision, recall, F1-score, and a confusion matrix for each sentiment class.
+- Inspect misclassified examples, especially sarcasm, negation, mixed-language text, and very short messages.
+- Record dataset provenance and label definitions; do not report metrics that have not been produced by an actual run.
