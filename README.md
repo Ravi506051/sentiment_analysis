@@ -38,3 +38,15 @@ Compare multiple classifiers, add error analysis for ambiguous text and evaluate
 
 ## Maintainer
 **Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
+
+## Skills Demonstrated
+
+- Natural-language preprocessing
+- text vectorization
+- supervised classification
+- model evaluation
+- sentiment error analysis.
+
+## Portfolio Context
+
+This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
